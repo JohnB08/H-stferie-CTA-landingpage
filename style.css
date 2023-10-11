@@ -40,13 +40,14 @@ body {
   font-size: 64px;
   letter-spacing: 0.2em;
 }
+
+/* Is there a better and easier way to achieve this effect? */
 .white1::before,
 .white2::before,
 .white3::before,
 .white4::before,
 .white5::before {
   position: absolute;
-
   color: white;
 }
 .white1::before {
@@ -54,8 +55,8 @@ body {
   right: 100%;
 }
 .white2::before {
-  content: "THE";
-  right: 110%;
+  content: "THE ";
+  right: 100%;
 }
 .white3::before {
   content: "O";
@@ -63,8 +64,8 @@ body {
 }
 .white4::before {
   content: "A THO";
-  width: 100%;
-  right: 90%;
+  width: 90%;
+  right: 100%;
 }
 .white5::before {
   content: "SPI";
@@ -100,4 +101,55 @@ body {
   border-top: 4px solid #0d0a01;
   border-left: 4px solid #0d0a01;
   background: var(--blue);
+}
+
+@media only screen and (max-width: 1200px) {
+  body {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .btn {
+    padding: 30px 80px;
+  }
+  .desc,
+  .motto {
+    line-height: 1.5em;
+  }
+}
+@media only screen and (max-width: 600px) {
+  body {
+    grid-template-columns: 1fr;
+    grid-template-rows: 80vh 120vh;
+    background: url(./images/Spires.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .main {
+    grid-area: 2/1/3/2;
+  }
+  .container {
+    background: linear-gradient(to top, #0d0a01 90%, #af34260c);
+    color: var(--White);
+    align-items: center;
+    height: 120vh;
+    gap: 5%;
+  }
+  .heading h1 {
+    font-size: 48px;
+  }
+  .heading {
+    position: static;
+    text-align: center;
+  }
+  .white1::before,
+  .white2::before,
+  .white3::before,
+  .white4::before,
+  .white5::before {
+    position: static;
+  }
+  .desc .motto {
+    line-height: 2em;
+  }
 }
