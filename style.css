@@ -172,6 +172,7 @@ body {
     background: transparent;
     line-height: 2em;
     border: none;
+    text-align: center;
   }
   .btn {
     width: 100%;
