@@ -26,7 +26,6 @@ body {
 .container {
   background: var(--bg-color);
   height: 100vh;
-  gap: 2%;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -34,7 +33,7 @@ body {
 .heading {
   position: relative;
   overflow: visible;
-  margin-top: 10%;
+  margin-top: 5%;
 }
 .heading h1 {
   font-size: 64px;
@@ -73,14 +72,28 @@ body {
 }
 .desc,
 .motto {
-  padding: 0 10%;
+  display: block;
+  width: 90%;
+  align-self: center;
+  padding: 2% 5%;
   font-weight: 700;
-  line-height: 2em;
+  line-height: 1.5em;
+  color: var(--White);
+  background: var(--blue);
 }
+.desc {
+  border-radius: 10px 10px 0 0;
+  margin-top: 5%;
+}
+.motto {
+  border-radius: 0 0 10px 10px;
+  border-bottom: 5px solid #f1faee;
+}
+
 .btn {
   align-self: center;
   padding: 30px 120px;
-  margin-top: 5%;
+  margin-top: 101%;
   border: none;
   background: var(--White);
   border-radius: 10px;
@@ -149,8 +162,11 @@ body {
   .white5::before {
     position: static;
   }
-  .desc .motto {
+  .desc,
+  .motto {
     line-height: 2em;
+    background: transparent;
+    border: none;
   }
   .btn {
     width: 100%;
