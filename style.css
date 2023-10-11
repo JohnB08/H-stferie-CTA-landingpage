@@ -70,24 +70,23 @@ body {
   content: "SPI";
   right: 100%;
 }
+.textcontainer {
+  margin-top: 5%;
+  color: var(--White);
+  background: var(--blue);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-weight: 700;
+  line-height: 1.5em;
+  padding: 5% 5%;
+  gap: 20%;
+  height: 25%;
+  border-bottom: 10px solid var(--White);
+}
 .desc,
 .motto {
   display: block;
-  width: 90%;
-  align-self: center;
-  padding: 2% 5%;
-  font-weight: 700;
-  line-height: 1.5em;
-  color: var(--White);
-  background: var(--blue);
-}
-.desc {
-  border-radius: 10px 10px 0 0;
-  margin-top: 5%;
-}
-.motto {
-  border-radius: 0 0 10px 10px;
-  border-bottom: 5px solid #f1faee;
 }
 
 .btn {
@@ -107,7 +106,7 @@ body {
 .btn:hover,
 .btn:focus {
   cursor: pointer;
-  background: linear-gradient(to left, #1d3557, #f1faee);
+  background: linear-gradient(to bottom, #1d3557 60%, #f1faee);
   color: white;
 }
 .btn:active {
@@ -128,6 +127,13 @@ body {
   .desc,
   .motto {
     line-height: 1.5em;
+  }
+  .textcontainer {
+    font-size: 14px;
+    height: 30%;
+  }
+  .btn {
+    font-size: 18px;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -162,10 +168,9 @@ body {
   .white5::before {
     position: static;
   }
-  .desc,
-  .motto {
-    line-height: 2em;
+  .textcontainer {
     background: transparent;
+    line-height: 2em;
     border: none;
   }
   .btn {
