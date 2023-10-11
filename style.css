@@ -93,7 +93,7 @@ body {
 .btn {
   align-self: center;
   padding: 30px 120px;
-  margin-top: 101%;
+  margin-top: 10%;
   border: none;
   background: var(--White);
   border-radius: 10px;
