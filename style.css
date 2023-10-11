@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --bg-color: #e63946;
+  --White: #f1faee;
+  --blue: #1d3557;
+  --black: #0d0a01;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 2fr 35%;
+  background: url(./images/People\ on\ bridge.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--blue);
+}
+.main {
+  grid-area: 1/2/2/3;
+}
+.container {
+  background: var(--bg-color);
+  height: 100vh;
+  gap: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.heading {
+  position: relative;
+  overflow: visible;
+  margin-top: 10%;
+}
+.heading h1 {
+  font-size: 64px;
+  letter-spacing: 0.2em;
+}
+.white1::before,
+.white2::before,
+.white3::before,
+.white4::before,
+.white5::before {
+  position: absolute;
+
+  color: white;
+}
+.white1::before {
+  content: "PRA";
+  right: 100%;
+}
+.white2::before {
+  content: "THE";
+  right: 110%;
+}
+.white3::before {
+  content: "O";
+  right: 100%;
+}
+.white4::before {
+  content: "A THO";
+  width: 100%;
+  right: 90%;
+}
+.white5::before {
+  content: "SPI";
+  right: 100%;
+}
+.desc,
+.motto {
+  padding: 0 10%;
+  font-weight: 700;
+  line-height: 2em;
+}
+.btn {
+  align-self: center;
+  padding: 30px 120px;
+  margin-top: 5%;
+  border: none;
+  background: var(--White);
+  border-radius: 10px;
+  font-size: 24px;
+  font-family: inherit;
+  font-weight: 700;
+  color: var(--blue);
+  letter-spacing: 0.2em;
+  transition: 0.5s;
+}
+.btn:hover,
+.btn:focus {
+  cursor: pointer;
+  background: linear-gradient(to left, #1d3557, #f1faee);
+  color: white;
+}
+.btn:active {
+  border-top: 4px solid #0d0a01;
+  border-left: 4px solid #0d0a01;
+  background: var(--blue);
+}
