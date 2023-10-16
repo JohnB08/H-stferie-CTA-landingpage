@@ -48,34 +48,28 @@ body {
 
 /* Is there a better and easier way to achieve this effect? */
 
-.white1::before,
-.white2::before,
-.white3::before,
-.white4::before,
-.white5::before {
+.white1,
+.white2,
+.white3,
+.white4,
+.white5 {
   position: absolute;
   color: white;
-  z-index: -1;
 }
-.white1::before {
-  content: "PRA";
+.white1 {
   right: 100%;
 }
-.white2::before {
-  content: "THE ";
+.white2 {
   right: 110%;
 }
-.white3::before {
-  content: "O";
+.white3 {
   right: 100%;
 }
-.white4::before {
-  content: "A THO";
+.white4 {
   width: 90%;
   right: 100%;
 }
-.white5::before {
-  content: "SPI";
+.white5 {
   right: 100%;
 }
 .textcontainer {
