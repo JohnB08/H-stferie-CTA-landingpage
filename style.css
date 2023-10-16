@@ -247,11 +247,11 @@ I want the other half to allways align with the start of the parent div. */
     position: static;
     text-align: center;
   }
-  .white1::before,
-  .white2::before,
-  .white3::before,
-  .white4::before,
-  .white5::before {
+  .white1,
+  .white2,
+  .white3,
+  .white4,
+  .white5 {
     position: static;
   }
   .textcontainer {
