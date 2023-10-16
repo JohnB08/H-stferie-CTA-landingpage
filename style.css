@@ -46,7 +46,9 @@ body {
   letter-spacing: 0.2em;
 }
 
-/* Is there a better and easier way to achieve this effect? */
+/* Is there a better and easier way to achieve this effect? 
+I want half the text to allways be outside it's parent div and with white text.
+I want the other half to allways align with the start of the parent div. */
 
 .white1,
 .white2,
@@ -72,6 +74,9 @@ body {
 .white5 {
   right: 100%;
 }
+
+/* main content cont. */
+
 .textcontainer {
   margin-top: 5%;
   color: var(--White);
@@ -172,12 +177,23 @@ body {
 .emailbtn {
   width: 100%;
   padding: 2.5% 5%;
+  cursor: pointer;
   background: var(--blue);
   border: none;
   letter-spacing: 10%;
   font-family: inherit;
   color: var(--White);
   border-radius: 8px;
+  transition: 0.5s;
+}
+.emailbtn:hover {
+  color: var(--blue);
+  background: var(--White);
+  border: 4px solid var(--blue);
+}
+.emailbtn:active {
+  border-top: 6px solid var(--blue);
+  border-left: 6px solid var(--blue);
 }
 
 /* Media Queries */
